@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <!-- Floating Dot -->
+    <View
+        android:id="@+id/floatingDot"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/floating_dot_bg"
+        android:elevation="8dp" />
+
+    <!-- Control Panel (Hidden by default) -->
+    <LinearLayout
+        android:id="@+id/controlPanel"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/floatingDot"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/control_panel_bg"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:elevation="10dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Auto Reload"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Status -->
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tap Start"
+            android:textSize="11sp"
+            android:textColor="#E0E0E0"
+            android:gravity="center"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Start Button -->
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Start"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF"
+            android:background="#4CAF50"
+            android:layout_marginBottom="6dp" />
+
+        <!-- Stop Button -->
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Stop"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF"
+            android:background="#F44336"
+            android:enabled="false"
+            android:layout_marginBottom="6dp" />
+
+        <!-- Close Button -->
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Close"
+            android:textSize="11sp"
+            android:textColor="#FFFFFF"
+            android:background="#757575" />
+
+    </LinearLayout>
+
+</RelativeLayout>
